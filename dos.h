@@ -6,8 +6,7 @@
  * I design an int code for detect any OS, the following list are the codes:
  * [2] -> Windows OS
  * [3] -> Linux OS
- * [4] -> Unix based OS
- * [5] -> MacOS
+ * [4] -> MacOS
  */
 #include <stdio.h>
 
@@ -19,16 +18,13 @@ int os_type;
 int dos()
 {
 #ifdef _WIN32
-    printf("Windows\n");
-    return 2;
+    os_type = 2;
+    return os_type;
 #elif __linux__
-    printf("Linux\n");
-    return 3;
-#elif __unix__
-    printf("Other unix OS\n");
-    return 4;
+    os_type = 3;
+    return os_type;
 #elif __APPLE__
-    os_type = 5;
+    os_type = 4;
     return os_type;
 #else
     printf("Unidentified OS\n");

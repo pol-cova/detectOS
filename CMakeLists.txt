@@ -3,4 +3,4 @@ project(detectOs C)
 
 set(CMAKE_C_STANDARD 23)
 
-add_executable(detectOs main.c dos.h)
+add_executable(detectOs exampleUse.c dos.h)

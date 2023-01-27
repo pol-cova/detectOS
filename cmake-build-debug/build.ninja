@@ -46,8 +46,8 @@ cmake_ninja_workdir = /Users/paulcontreras/CLionProjects/detectOs/cmake-build-de
 
 build cmake_object_order_depends_target_detectOs: phony || CMakeFiles/detectOs.dir
 
-build CMakeFiles/detectOs.dir/main.c.o: C_COMPILER__detectOs_Debug /Users/paulcontreras/CLionProjects/detectOs/main.c || cmake_object_order_depends_target_detectOs
-  DEP_FILE = CMakeFiles/detectOs.dir/main.c.o.d
+build CMakeFiles/detectOs.dir/exampleUse.c.o: C_COMPILER__detectOs_Debug /Users/paulcontreras/CLionProjects/detectOs/exampleUse.c || cmake_object_order_depends_target_detectOs
+  DEP_FILE = CMakeFiles/detectOs.dir/exampleUse.c.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu2x
   OBJECT_DIR = CMakeFiles/detectOs.dir
   OBJECT_FILE_DIR = CMakeFiles/detectOs.dir
@@ -60,7 +60,7 @@ build CMakeFiles/detectOs.dir/main.c.o: C_COMPILER__detectOs_Debug /Users/paulco
 #############################################
 # Link the executable detectOs
 
-build detectOs: C_EXECUTABLE_LINKER__detectOs_Debug CMakeFiles/detectOs.dir/main.c.o
+build detectOs: C_EXECUTABLE_LINKER__detectOs_Debug CMakeFiles/detectOs.dir/exampleUse.c.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
   OBJECT_DIR = CMakeFiles/detectOs.dir
   POST_BUILD = :
