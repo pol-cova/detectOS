@@ -9,12 +9,18 @@ int main() {
     switch (os_detected) {
         case 2:
             printf("Windows");
+            // windows code here
+            break;
         case 3:
-            printf("Linux");
+            printf("Linux"); 
+            // linux code here
+            break;
+            
         case 4:
-            printf("UNIX BASED");
-        case 5:
             printf("MacOsX");
+            // macosx code here
+            break;
+            
     }
 
     return 0;
